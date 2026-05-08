@@ -25,10 +25,10 @@ const Footer: React.FC = () => {
       <div className="text-white py-6" style={{ backgroundColor: '#001a33' }}>
         <div className="container mx-auto px-4">
           <div className="py-3">
-            <img 
-              alt="Government of Brazil logo showing gov.br in white text" 
-              className="w-24" 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Gov.br_logo.svg/1200px-Gov.br_logo.svg.png"
+            <img
+              src="https://barra.sistema.gov.br/v1/assets/govbr.webp"
+              alt="Logo gov.br"
+              className="h-[34px] w-auto"
             />
           </div>
           <div className="border-t border-gray-600"></div>
