@@ -332,6 +332,7 @@ const ProgramDetails: React.FC = () => {
 							</div>
 
 							<button
+								id="begin_checkout"
 								onClick={handleSubmit}
 								disabled={!selectedLocation || !acceptedTerms.attendance || !acceptedTerms.information}
 								className="w-full bg-[#1351B4] text-white py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#1351B4]/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
