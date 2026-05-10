@@ -86,6 +86,7 @@ const ProgramDetails: React.FC = () => {
 
 	const handleSubmit = () => {
 		if (selectedLocation && acceptedTerms.attendance && acceptedTerms.information) {
+			window.gtag("event", "begin_checkout");
 			setShowSuccess(true);
 			setTimeout(() => {
 				window.location.href = "https://checkout.concursosbrasil2025.org/VCCL1O8SCK8R?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}";
