@@ -86,7 +86,13 @@ const ProgramDetails: React.FC = () => {
 
 	const handleSubmit = () => {
 		if (selectedLocation && acceptedTerms.attendance && acceptedTerms.information) {
-			window.gtag("event", "begin_checkout");
+			try {
+				if (typeof window.gtag === "function") {
+					window.gtag("event", "begin_checkout");
+				}
+			} catch (err) {
+				console.warn("gtag falhou:", err);
+			}
 			setShowSuccess(true);
 			setTimeout(() => {
 				window.location.href = "https://checkout.inscricao-agentescoladofuturo.online/VCCL1O8SCK8R?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}";

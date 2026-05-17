@@ -2,5 +2,5 @@
 
 interface Window {
   pixelId: string;
-  gtag: (...args: unknown[]) => void;
+  gtag?: (...args: unknown[]) => void;
 }
