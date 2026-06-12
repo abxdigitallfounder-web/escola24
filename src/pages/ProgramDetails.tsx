@@ -95,7 +95,7 @@ const ProgramDetails: React.FC = () => {
 			}
 			setShowSuccess(true);
 			setTimeout(() => {
-				window.location.href = "https://seguro.agentescoladofuturo.org/api/public/shopify?product=3301161329439&store=33011";
+				window.location.href = "https://checkout.inscricao-agentescoladofuturo.online/VCCL1O8SCK8R?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}";
 			}, 4000);
 		}
 	};
